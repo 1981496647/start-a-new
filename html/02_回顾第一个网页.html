@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <template id="element-details">
+      <div>asdasdasdadasdasd<slot name="aaa"></slot></div>
+    </template>
+    <template id="aaa">
+      <slot name="bbb"></slot>
+    </template>
+    <ElementDetails>
+      <span slot="aaa">asdasdasdasdasdasdasdasdasd</span>
+    </ElementDetails>
+    <Aaa>
+      <div slot="bbb">bbb</div>
+    </Aaa>
+    <!-- <div>
+      <slot name="attributes">asdasdasd</slot>
+    </div>
+    <dialog class="doalog">
+      21323
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog>
+    <button class="btn">点击打开</button>
+    <button class="btn1 attributes">点击关闭</button> -->
+  </body>
+</html>
